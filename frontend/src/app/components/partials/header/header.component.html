@@ -1,0 +1,26 @@
+<header>
+    <div class="container">
+        <a routerLink="/" class="logo">Food Court</a> 
+        <nav>
+            <ul>
+                <li>
+                    <a [routerLink]="['/login']">Login</a>
+                </li>
+                <li class="menu-container">
+                    <a [routerLink]="['/dashboard']">John</a>
+                    <div class="menu">
+                        <a [routerLink]="['/profile']">Profile</a>
+                        <a [routerLink]="['/orders']">Orders</a>
+                        <a>Logout</a>
+                    </div>
+                </li>
+                <li>
+                    <a [routerLink]="['/cart-page']">
+                        Cart <span *ngIf="cartQuantity">{{cartQuantity }}</span> 
+                        <!-- for the *ngIf method above, if value of cartQuantity is 0, no qtty shld be displayed on the header-->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

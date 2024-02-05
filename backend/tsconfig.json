@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "outDir": "./built",
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "moduleResolution": "node",
+      "module": "CommonJS",
+      "esModuleInterop": true
+    },
+    "include": ["src/**/*"],
+  }
